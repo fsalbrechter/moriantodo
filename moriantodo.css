@@ -1,0 +1,13 @@
+/* CSS declarations go here */
+.done {
+  text-decoration: line-through;
+}
+
+.notdone {
+  
+}
+
+.delete {
+  font-size:50%;
+  color:blue;
+}

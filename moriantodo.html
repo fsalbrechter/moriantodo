@@ -1,0 +1,24 @@
+<head>
+  <title>moriantodo</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Todos for {{pathname}}</h1>
+  {{#each todos}}
+    {{> todo}}
+  {{/each}}
+  <input type="text" id="newtodo" />
+  <input type="button" id="addtodo" value="Add" />
+</template>
+
+<template name="todo">
+  <div class="todo {{markdone}}">
+    <span class="done"><input type="checkbox" {{{done_checkbox}}} /></span>
+    <span class="name">{{name}}</span>
+    <span class="delete"><a href="">X</a></span>
+  </div>
+</template>
